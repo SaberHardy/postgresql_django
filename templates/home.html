@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Queries</title>
+</head>
+<body>
+
+<h2>This is just test for display all the data</h2>
+<h3>Driver: {{ driver.name }}</h3>
+<h3>Licence: {{ driver.license }}</h3>
+
+{% for car in cars %}
+    <p class="mb-2">Model: {{ car.make }} {{ car.model }}</p>
+    <p class="mb-2">Year: {{ car.year }}</p>
+    <p class="mb-2">Vin: {{ car.vin }}</p>
+{% endfor %}
+</body>
+</html>
